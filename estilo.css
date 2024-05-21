@@ -1,0 +1,402 @@
+/* importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:  'Segoe UI', 'Sans-serif';
+    text-align: center;
+}
+a{text-decoration:none;}
+body{
+    background-color: #f6fafc;
+}
+
+/* SECCION I N I C I O */
+.inicio{
+    background:linear-gradient(to right, #ff8800, #e3c296);
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
+    height: 90vh;
+    padding:  0 20px;
+}
+.inicio .contenido{
+    max-width: 1000px;
+    margin: auto;
+    color: #000000;
+}
+.inicio header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+.inicio .logo{
+    display: flex;
+    align-items: center;
+    color: #520483;
+    font-size: 25px;
+}
+.inicio .logo i{
+    display: inline-block;
+    margin-right: 20px;
+}
+#inicio header nav a{
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+#inicio header nav a:hover{
+    border-bottom: 2px solid #ff5b00;
+}
+.inicio .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.inicio .redes a:hover{
+    color: #ff5b00;
+}
+.inicio .fila{
+    display: flex;
+    margin-top: 0px;
+    padding-bottom: 100px;
+}
+.inicio .fila .col{
+    width: 50%;
+}
+.inicio .fila .col h2{
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-size: 40px;
+}
+.inicio .fila .col p{
+    margin-bottom: 40px;
+}
+.inicio .fila .col .contenedor-img{
+    max-width: 400px;
+    margin: auto;
+}
+.inicio .fila .col .contenedor-img img{
+    width: 100%;
+}
+.inicio .fila .col button{
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #ff5b00;
+    color: #fff;
+    background:linear-gradient(to right, #ff5b00, #ff9900);
+    transition: .5s;
+    cursor: pointer;
+}
+.inicio .fila .col button:hover{
+    transform: scale(1.1);
+}
+#icono-nav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+#icono-nav:hover{
+    background-color: #3e3e3e;
+}
+.sombra{
+    filter:drop-shadow(0em 30px 20px #a384e1);
+}
+
+/* SECCION T R A B A J O S */
+.trabajos{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.trabajos h2{
+    text-align: center;
+}
+.trabajos nav{
+    text-align: center;
+    margin: 30px 0;
+}
+.trabajos nav a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #e57600;
+    font-weight: bold;
+    padding: 3px 10px;
+    border: 3px solid transparent;
+}
+.trabajos nav a:hover{
+    border: 3px solid #520483;
+}
+/* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
+.borde{
+    border: 3px solid #520483;  
+}
+.trabajos .galeria .item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.trabajos .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap:30px;
+}
+.trabajos .galeria .item{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #520483 ;
+    border-radius: 10px;
+}
+.trabajos .galeria .item .info{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color:#fff ;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+.trabajos .galeria .item .info h3{
+    color: #520483;
+    margin-bottom: 20px;
+}
+.trabajos .galeria .item .info span{
+    color: #520483;
+    display: inline-block;
+    border: 2px solid #520483;
+    margin: 0 3px;
+    padding:  0 5px;
+}
+.trabajos .galeria .item .info a{
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #520483;
+    font-weight: bold;
+}
+.trabajos .galeria .item:hover .info{
+    opacity: 1;
+    top: 0;
+}
+
+/* SECCIÓN C O N T A C T O */
+.contacto{
+    background:
+        linear-gradient(rgba(201, 141, 224, 0.582), rgb(172, 66, 229)),
+        url(Imagenes/mimage.jpg);
+        background-size: cover;
+        color: #000000;
+        margin-top: 80px;
+        padding: 20px 30px;
+        height: 350px;
+}
+.contacto .contenedor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto p,
+.contacto h3{
+    text-align: left;
+    padding-bottom: 5px;
+}
+.contacto .contenedor-contacto .fila{
+    display: flex;
+}
+.contacto .contenedor-contacto .fila .col{
+    width: 50%;
+}
+.contacto .contenedor-contacto .info{
+    margin-bottom: 30px;
+    border-left: 3px solid #000000;
+    padding-left: 8px;
+}
+.contacto .contenedor-contacto .info p{
+    color: #000000;
+}
+footer{
+    background-color: #000;
+    color: #000;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1180px){
+    .inicio{
+        clip-path: none;
+    }
+}
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #nav.responsive{
+        background-color: rgba(0,0,0,.9);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+    #nav.responsive a{
+        font-size: 30px;
+    }
+    #icono-nav{
+        display: block;
+    }
+
+    .inicio{
+        height: auto;
+    }
+    .inicio .fila{
+        display: block;
+    }
+    .inicio .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .inicio .fila .col h2{
+        margin-top: 20px;
+    }
+    .inicio .fila .col .contenedor-img{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .trabajos nav a{
+        margin: 0 5px;
+    }
+
+    .contacto .fila{
+        display:  block !important;
+    }
+    .contacto .fila .col{
+        text-align: center;
+        width: 100% !important;
+    }
+    .contacto .fila .col .info{
+        float: left;
+        font-size: 12px;
+        width: 25%;
+    }
+}
+.users-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.users-form form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.users-form form input{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.users-form form input[type="text"],
+.users-form form input[type="email"],
+.users-form form input[type="tel"],
+.users-form form input[type="password"],
+.users-form form input[type="submit"] {
+    border: 1px solid;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+.users-table{
+    margin-top: 10px;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+.users-table table{
+    width:100%;
+    margin-top: 20px;
+    max-width: 100%;
+    border: 3px solid #ccc;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    table-layout: fixed;
+}
+
+table tr{
+    padding: 4px
+}
+tabke th{
+    padding:16px;
+    font-size:.85em;
+    height: 10px;
+}
+
+.users-table th, .users-table tr {
+    border: 2px solid #ccc;
+    padding: 8px;
+    text-align: left
+    /*word-grap break-word;*/
+}
+
+.users-table--edit{
+    background-color: #fff;
+    padding: 6px;
+    color:#bb00ff;
+    text-align: center;
+    font-weight: bold;
+}
+.users-table--delete{
+    background-color: #fff;
+    padding: 6px;
+    color:#bb00ff;
+    text-align: center;
+    font-weight: bold;
+}
+.users-table--delete:hover {
+    color: #ff8b10;
+}
+.users-table--edit:hover {
+    color: #ff8b10;
+}
+
+input[type="submit"] {
+    background-color: #bb00ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff8b10;
+}
